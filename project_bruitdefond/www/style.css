@@ -1,0 +1,51 @@
+
+body{
+	width: 100%;
+}
+section {
+	float: left;
+	width : 60%;
+}
+
+aside  {
+	float: right;
+	width: 30%;
+}
+aside div {
+	width: 90%;
+}
+
+@-webkit-keyframes AutoSlide {
+    0% {
+        top: 0px; /*1ère image*/
+    }
+	90% {
+		top: -2500px;
+	}
+    100% {
+        top: 0px; /*1ère image*/
+    }
+}
+
+aside .slideshow  {
+    position: relative;
+    overflow: hidden;
+	height: 250px;
+}
+aside .slideshow ul {
+	position: absolute;
+    margin: 0;
+	top:50px;
+	left: -50px;
+	
+	animation: AutoSlide 15s infinite;
+    -webkit-animation: AutoSlide 15s infinite;
+}
+aside .slideshow img{
+	height: 250px;
+}
+
+footer {
+	clear: both;
+}
+

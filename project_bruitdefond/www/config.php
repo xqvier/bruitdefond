@@ -10,7 +10,7 @@ $DATABASE_PASS = "toto";
 
 
 $CONTACT_MAIL = "bruitdefondsp@live.fr";
-$FACEBOOK_PAGE = "facebook.com";
+$FACEBOOK_PAGE = "https://www.facebook.com";
 
 
 
