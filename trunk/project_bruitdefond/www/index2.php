@@ -1,6 +1,6 @@
 <?php
-include ("config.php");
-include ("database.php");
+include("config.php");
+include("database.php");
 ?>
 <!DOCTYPE html>
 <html>
