@@ -2,9 +2,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
     </head>
     <body>
-	test tralalalala
+		<a href="index2.php">Entrez</a>
     </body>
 </html>
