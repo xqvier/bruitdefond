@@ -1,6 +1,6 @@
 
 
-<article><img src="./images/photos page 3 - Sylvy.jpg"/> Sylvy a chanté pour la première fois sur scène à l'âge de 11 ans. Ce fût le début d'une aventure musicale où se sont
+<article><?php afficheImage("images/photos  page 3 - Pat.jpg", null, 300)?> Sylvy a chanté pour la première fois sur scène à l'âge de 11 ans. Ce fût le début d'une aventure musicale où se sont
 enchainée diverses prestations scéniques (gala, téléthon, spectacle des restos du coeur, fête votive, ...)
 Par la suite, elle fût chanteuse dans l'orchestre « Vibration » pendant 3 années, et continua sa route en tant que choriste 
  le JH club Millavois. </article>
