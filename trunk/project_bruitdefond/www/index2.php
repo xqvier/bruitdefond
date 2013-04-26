@@ -2,14 +2,18 @@
 include ("config.php");
 include ("database.php");
 ?>
+<!DOCTYPE html>
 <html>
 <head>
-
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
 <?php
 include ("header.php");
 include ("nav.php");
+?>
+<section>
+<?php
 if(isset($_GET['p'])){
 	if($_GET['p'] == "galerie"){
 		include("galerie.php");
@@ -28,6 +32,9 @@ if(isset($_GET['p'])){
 } else{
 	include("accueil.php");
 }
+?>
+</section>
+<?php
 include ("aside.php");
 include ("footer.php");
 
