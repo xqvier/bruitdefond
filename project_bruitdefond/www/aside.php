@@ -34,6 +34,16 @@
 			?></ul>
 	</div>
 	<div>
-		<h1>Dates</h1>
+		<h1>Dates</h1>		
+		<ul>
+			<?php $dates = getFuturesDates();
+				while(($date = mysqli_fetch_object($dates)) != NULL){
+					?>
+					<li><datetime><?php echo $date->day; ?></datetime> - <?php echo $date->title; ?><br /><?php echo $date->place; ?></li>
+					<?php
+				}
+			?>
+			
+		</ul>
 	</div>
 </aside>
