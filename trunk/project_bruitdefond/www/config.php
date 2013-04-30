@@ -1,6 +1,6 @@
 <?php
 
-// DATABASE config
+// DATABASE 
 $DATABASE_HOST = "10.3.14.11";
 $DATABASE_PORT = 3306;
 $DATABASE_NAME = "bruitdefond";
@@ -8,10 +8,19 @@ $DATABASE_NAME = "bruitdefond";
 $DATABASE_USER = "bdf";
 $DATABASE_PASS = "toto";
 
+// Mail
+$SMTP_SERVER = "";
+$SMTP_PORT = 25;
+$SENDER_MAIL = "";
 
-$CONTACT_MAIL = "bruitdefondsp@live.fr";
+
+// Contact
+$CONTACT_MAIL = "xqvier@gmail.com";
 $FACEBOOK_PAGE = "https://www.facebook.com";
 
+
+// Formattage
+$FORMAT_DATE = "d/m/Y - H:i";
 
 
 

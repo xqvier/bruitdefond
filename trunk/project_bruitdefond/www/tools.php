@@ -2,26 +2,25 @@
 function afficheImage($imageNameComp, $width, $height){
 	$imagePath = explode("/", $imageNameComp);
 	$imageName = explode(".", $imagePath[count($imagePath)-1])[0];
-	$destImg = "images/mini/".$imageName."_".$width."x".$height.".jpeg";
-	if (file_exists($destImg)){
-		$imgDest = imagecreatefromjpeg ($destImg);
-		imagejpeg($imgDest, $destImg);
-		echo '<img src="'.$destImg.'" />';
-	}else{
-		$imgSrc = imagecreatefromjpeg ($imageNameComp);
-		$size = getimagesize($imageNameComp);
-		$widthOrig = $size[0];
-		$heightOrig = $size[1];	
-		if ($height == null){
-			$height = ($heightOrig * $width)/$widthOrig;
-		}
-		if ($width == null){
-			$width = ($widthOrig * $height)/$heightOrig;
-		}
-		print_r($size);
-		$imgDest = imagecreate($width, $height);
-		imagecopyresampled ($imgDest, $imgSrc, 0, 0, 0, 0, $width, $height, $widthOrig, $heightOrig);
-		imagejpeg($imgDest, $destImg);
-		echo '<img src="'.$destImg.'" />';
+	$size = getimagesize($imageNameComp);
+	$widthOrig = $size[0];
+	$heightOrig = $size[1];	
+	if ($height == null){
+		$height = round(($heightOrig * $width)/$widthOrig);
 	}
+	if ($width == null){
+		$width = round(($widthOrig * $height)/$heightOrig);
+	}
+	$destImg = "";
+	for($i = 0; $i < count($imagePath) -1; $i++){
+		$destImg .= $imagePath[$i]."/";
+	}
+	$destImg .= "mini/".$imageName."_".$width."x".$height.".jpeg";
+	if (!file_exists($destImg)){	
+		$imgSrc = imagecreatefromjpeg ($imageNameComp);
+		$imgDest = imagecreatetruecolor($width, $height);
+		imagecopyresampled ($imgDest, $imgSrc, 0, 0, 0, 0, $width, $height, $widthOrig, $heightOrig);
+		imagejpeg($imgDest, $destImg, 100);
+	}
+	echo '<a href="'.$imageNameComp.'"><img src="'.$destImg.'" /></a>';
 }
