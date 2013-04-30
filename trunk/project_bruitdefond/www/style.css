@@ -1,7 +1,7 @@
 
 body{
 	width: 100%;
-	background-image:url('images/photos page 6 - devant pochette.jpg');
+	background-color:#9A9F9E;
 }
 section {
 	float: left;
@@ -28,6 +28,8 @@ aside div {
     }
 }
 
+
+
 aside .slideshow  {
     position: relative;
     overflow: hidden;
@@ -45,6 +47,54 @@ aside .slideshow ul {
 aside .slideshow img{
 	height: 250px;
 }
+
+#galerie{
+	list-style: none outside none;
+	/*margin: 0 auto; /* La galerie est centrée horizontalement */
+	padding: 0;
+}
+
+#galerie li {
+display:inline;
+	float: left;
+	margin: 0;
+	padding: 5px;
+	position: relative;
+	z-index: 10;
+}
+
+#galerie li img {
+	border: 5px solid #fff;
+	z-index: 100;
+	transition: transform 0.25s ease-in-out;
+	-moz-transition: -moz-transform 0.25s ease-in-out;
+	-o-transition: -o-transform 0.25s ease-in-out;
+	-webkit-transition: -webkit-transform 0.25s ease-in-out;
+	transform: scale(0.75); /* On réduit l'image à 75% */
+	-moz-transform: scale(0.75);
+	-o-transform: scale(0.75);
+	-webkit-transform: scale(0.75);
+}
+
+#galerie:hover li img {
+	opacity: 0.5; /* Au survol de la galerie, toute les images auront une opacité de 50% */
+}
+ 
+#galerie li:hover img {
+	opacity: 1; /* L'image survolée aura une opacité de 100% */
+	z-index: 100;
+	transform: scale(1); /* On affiche l'image à sa taille normale */
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-webkit-transform: scale(1);
+	box-shadow: 1px 1px 10px #000; /* On ajoute une ombre */
+	-moz-box-shadow: 1px 1px 10px #000;
+	-o-box-shadow: 1px 1px 10px #000;
+	-webkit-box-shadow: 1px 1px 10px #000;
+	-ms-transform: scale(1);
+	
+}
+
 
 footer {
 	clear: both;
