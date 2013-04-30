@@ -13,6 +13,11 @@ function getFuturesDates(){
 	return mysqli_query($GLOBALS['db'], $query);
 }
 
+function getRecentesActualites(){
+	$query = "SELECT * FROM news ORDER BY timestamp LIMIT 0, 10";
+	
+	return mysqli_query($GLOBALS['db'], $query);
+}
 
 
 

@@ -26,9 +26,9 @@
 		<ul><?php 
 				$imageFiles = scandir("images/photos");
 				foreach ($imageFiles as $image){
-					if($image != "." && $image != ".." && $image != "Thumbs.db"){	
+					if(preg_match("!(\.jpg|\.jpeg|\.gif|\.bmp|\.png)$!i",$image)){
 						$image = "images/photos/".$image;
-						?><li><img src="<?php echo $image; ?>" /></li><?php
+						?><li><?php afficheImage($image, 250, null); ?></li><?php
 					}
 				}
 			?></ul>
@@ -39,7 +39,7 @@
 			<?php $dates = getFuturesDates();
 				while(($date = mysqli_fetch_object($dates)) != NULL){
 					?>
-					<li><datetime><?php echo $date->day; ?></datetime> - <?php echo $date->title; ?><br /><?php echo $date->place; ?></li>
+					<li><datetime><?php echo date_format(date_create($date->day), $FORMAT_DATE); ?></datetime> : <?php echo $date->title; ?><br /><?php echo $date->place; ?></li>
 					<?php
 				}
 			?>

@@ -1,9 +1,16 @@
 <?php
 if(isset($_REQUEST['action'])){
+	ini_set("SMTP", $SMTP_SERVER);
+	ini_set("smtp_port", $SMTP_PORT);
+	ini_set("sendmail_from", $SENDER_MAIL);
+	
 	$mail = $_REQUEST['mail'];
+	$sender = $SENDER_MAIL;
+	$to = $CONTACT_MAIL;
+	
 	$objet = $_REQUEST['objet'];
-	$corpmail = $_REQUEST['corpmail'].$_REQUEST['tel'];
-	mail($mail,$objet,$corpmail,"From:" . $mail);
+	$corpmail = $_REQUEST['corpmail']."\r\n".$_REQUEST['tel']."\r\n".$mail;
+	mail($to,$objet,$corpmail,"From:" . $mail);
 	/*require ( "./phpMailer/class.smtp.php"); 
 	require ( "./phpMailer/class.phpmailer.php"); 
 
@@ -52,7 +59,7 @@ echo $CONTACT_MAIL ."<br />"
 Votre Mail: <input type="email" name="mail">
 Votre Tél: <input type="tel" name="tel">
 Objet de votre message: <input type="text" name="objet">
-Votre message: <input type="text" name="corpmail">
+Votre message: <textarea name="corpmail"></textarea>
 <button type="submit">Envoyer</button>
 </form>
 
