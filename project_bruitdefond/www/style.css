@@ -8,6 +8,11 @@ body{
 	background-color:#9A9F9E;
 	font: arial;
 }
+a {
+	text-decoration: none;
+	color: red;
+}
+
 #corps {
 	margin: 0;
 	padding: 0;
@@ -67,7 +72,7 @@ nav a:hover {
 
 section {
 	float: left;
-	width : 72%;
+	width : 76%;
 	background: rgb(129, 141, 148);
 	margin: 0;
 }
@@ -84,13 +89,35 @@ section nav{
 }
 
 aside  {
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(135, 138, 141)), color-stop(100%,rgb(50, 51, 53)));
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(135, 138, 141)), color-stop(100%,rgb(50, 51, 53)));
 	float: right;
 	width: 24%;
-	padding: 2%;
+	margin: 0;
 }
 aside div {
-	width: 90%;
+	width: 100%;
+	margin-bottom: 20px;
+	padding-top: 0;
+	border-bottom: 2px solid grey;
+	border-top: 2px solid grey;
+}
+aside div h1 {
+	padding: 5px 5px 5px 5px;
+	margin: 0 0 10px 0;
+	background: rgb(156, 65, 57);
+	text-transform: uppercase;
+	color: white;	
+	font: bold 15px arial;
+}
+aside div datetime{
+	font-size: 12px;
+	font-style: italic;
+	color: lightgrey;
+}
+aside div h2 {
+	font-size: 14px;
+	font-style: bold;
+	display: inline;
 }
 
 aside audio{
@@ -99,51 +126,11 @@ aside audio{
 
 aside .slideshow {
 	position: relative;
-	width: 250px;
-	height: 500px;
+	width: 100%;
+	height: 400px;
 	margin: 0;	
+	padding: 0;
 	
-}
-
-article {
-	clear: both;
-	min-height:  210px;
-	margin-bottom: 30px;
-	padding : 20px;
-	border: 1px solid black;
-	border-width:8px;
-	border-color:rgb(155, 175, 206);
-	border-radius : 13%;
-	font-size: 21px;
-	margin: 3%;
-	text-align: justify;
-	text-justify: inter-words;
-}
-
-article h3{
-	text-align: center;
-}
-
-article h3 span{
-	font-size: 25px;
-	border-style: double;
-	border-width:5px;
-	border-color:rgb(124, 55, 42);
-	padding: 10px;
-}
-
-article a img {
-	float: left;
-	padding-top: 0px;
-	padding-bottom: 3px;
-	padding-left: 8px;
-	padding-right: 8px;
-}
-
-.center {
-	text-align: center;
-	font-size: 21px;
-	padding: 2%;
 }
 
 aside .slideshow a img {
@@ -153,7 +140,7 @@ aside .slideshow a img {
 	-webkit-animation-duration: 14s;
 	
 	opacity:0;
-	width: 90%;
+	width: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -196,6 +183,55 @@ aside .slideshow a:nth-of-type(6) img{
 }
 aside .slideshow a:nth-of-type(7) img{
   -webkit-animation-delay: 0;
+}
+
+article {
+	clear: both;
+	min-height:  210px;
+	margin: 2%;
+	margin-bottom: 30px;
+	border: 1px solid black;
+	border-color:rgb(155, 175, 206);
+	font-size: 21px;
+	text-align: justify;
+	text-justify: inter-words;
+	box-shadow: 1px 1px 10px #000; /* On ajoute une ombre */
+}
+article:hover {
+	-webkit-transform: scale(1.02);
+	opacity: 1;
+	-webkit-transition: -webkit-transform 0.25s ease-in-out;
+}
+article h1{
+	width:99%;
+	padding: 5px 5px 5px 5px;
+	margin: 0 0 10px 0;
+	background: rgb(156, 65, 57);
+	text-transform: uppercase;
+	color: white;	
+	font: bold 15px arial;
+	border-bottom: 1px grey solid;
+}
+article h1 datetime {
+	float: right;
+	font-size: 12px;
+	font-style: italic;
+	color: lightgrey;
+}
+article a img {
+	float: left;
+	padding-bottom: 8px;
+	padding-right: 8px;
+}
+article p {
+	padding: 8px;
+	margin: 0;
+}
+
+.center {
+	text-align: center;
+	font-size: 21px;
+	padding: 2%;
 }
 
 #news{
@@ -253,5 +289,12 @@ aside .slideshow a:nth-of-type(7) img{
 
 footer {
 	clear: both;
+	text-align: center;
+}
+footer a {
+	text-decoration: none;
+}
+footer a:visited {
+	text-decoration: none;
 }
 

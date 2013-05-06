@@ -8,7 +8,7 @@ if (mysqli_connect_error()) {
 }
 
 function getFuturesDates(){
-	$query = "SELECT * FROM dates WHERE day >= CURRENT_TIMESTAMP";
+	$query = "SELECT * FROM dates WHERE day >= CURRENT_TIMESTAMP ORDER BY day";
 	
 	return mysqli_query($GLOBALS['db'], $query);
 }

@@ -20,7 +20,7 @@
 			?>		
 
 			<article id="<?php echo $new->timestamp; ?>">
-				<h3><span><datetime><?php echo date_format(date_create($new->timestamp), $FORMAT_DATE); ?></datetime> : <?php echo $new->title; ?></span></h3><br />
+				<h1><datetime><?php echo date_format(date_create($new->timestamp), $FORMAT_DATE); ?></datetime><?php echo $new->title; ?></h1>
 				<p><?php echo $new->content; ?></p>
 			</article>
 			<?php

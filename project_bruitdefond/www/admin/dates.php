@@ -51,5 +51,5 @@
 		<?php } ?>
 	</tbody>	
 </table>
-<a href="?p=admin&a=dates&action=add">Ajouter une actualité</a>
+<a href="?p=admin&a=dates&action=add">Ajouter une date</a>
 <?php } ?>
