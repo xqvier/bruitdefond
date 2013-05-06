@@ -83,6 +83,23 @@ function editActualite($id, $timestamp, $title, $content) {
 	mysqli_query($GLOBALS['db'], $query);
 }
 
+function getVideo () {
+	$query = "SELECT * FROM video";
+	
+	return mysqli_query($GLOBALS['db'], $query);
+}
+
+function addVideo ($date, $title, $link) {
+	$query = "INSERT INTO video (date, title, link) VALUES('".$date."', '".$title."', '".$link."')";
+
+	mysqli_query($GLOBALS['db'], $query);
+}
+
+function deleteVideo ($id) {
+	$query = "DELETE FROM video WHERE id = '".$id."'";
+	
+	mysqli_query($GLOBALS['db'], $query);
+}
 
 
 
