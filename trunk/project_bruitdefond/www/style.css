@@ -77,6 +77,12 @@ section nav {
 	border: none;
 }
 
+
+section nav{
+	background: none;
+	border: none;
+}
+
 aside  {
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(135, 138, 141)), color-stop(100%,rgb(50, 51, 53)));
 	float: right;
@@ -103,13 +109,43 @@ article {
 	clear: both;
 	min-height:  210px;
 	margin-bottom: 30px;
-	padding : 10px;
+	padding : 20px;
 	border: 1px solid black;
+	border-width:8px;
+	border-color:rgb(155, 175, 206);
+	border-radius : 13%;
+	font-size: 21px;
+	margin: 3%;
+	text-align: justify;
+	text-justify: inter-words;
 }
+
+article h3{
+	text-align: center;
+}
+
+article h3 span{
+	font-size: 25px;
+	border-style: double;
+	border-width:5px;
+	border-color:rgb(124, 55, 42);
+	padding: 10px;
+}
+
 article a img {
 	float: left;
-	padding: 7px;
+	padding-top: 0px;
+	padding-bottom: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
 }
+
+.center {
+	text-align: center;
+	font-size: 21px;
+	padding: 2%;
+}
+
 aside .slideshow a img {
 	-webkit-animation-name: FadeInOut;
 	-webkit-animation-timing-function: ease-in-out;
@@ -161,6 +197,11 @@ aside .slideshow a:nth-of-type(6) img{
 aside .slideshow a:nth-of-type(7) img{
   -webkit-animation-delay: 0;
 }
+
+#news{
+	list-style: none;
+}
+
 
 #galerie{
 	list-style: none outside none;
