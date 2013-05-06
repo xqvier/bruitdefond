@@ -1,5 +1,4 @@
-<aside>
-	<div>
+<aside><div>
 		<h1>Playlist</h1>		
 		<?php 
 			$mp3Files = scandir("mp3");
@@ -22,12 +21,11 @@
 		?>
 	</div>	
 	<div>
-		<h1>Dates</h1>		
-		<ul>
+		<h1>Dates</h1>	
 			<?php $dates = getFuturesDates();
 				while(($date = mysqli_fetch_object($dates)) != NULL){
-					?>
-					<li><datetime><?php echo date_format(date_create($date->day), $FORMAT_DATE); ?></datetime> : <?php echo $date->title; ?><br /><?php echo $date->place; ?></li>
+					?><datetime><?php echo date_format(date_create($date->day), $FORMAT_DATE); ?></datetime> : <h2><?php echo $date->title; ?></h2><br />
+					<?php echo $date->place; ?><br />
 					<?php
 				}
 			?>
