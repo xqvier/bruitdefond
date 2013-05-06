@@ -22,6 +22,5 @@ function afficheImage($imageNameComp, $width, $height){
 		imagecopyresampled ($imgDest, $imgSrc, 0, 0, 0, 0, $width, $height, $widthOrig, $heightOrig);
 		imagejpeg($imgDest, $destImg, 100);
 	}
-	//echo '<a href="'.$imageNameComp.'"><img src="'.$destImg.'" /></a>';
-	echo '<img src="'.$destImg.'" />';
+	echo '<a href="'.$imageNameComp.'"><img src="'.$destImg.'" /></a>';
 }

@@ -3,9 +3,14 @@ body{
 	width: 100%;
 	background-color:#9A9F9E;
 }
+
 section {
 	float: left;
 	width : 60%;
+}
+
+header {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#7db9e8));
 }
 
 aside  {
@@ -24,7 +29,7 @@ aside .slideshow {
 	
 }
 
-aside .slideshow img {
+aside .slideshow a img {
 	-webkit-animation-name: FadeInOut;
 	-webkit-animation-timing-function: ease-in-out;
 	-webkit-animation-iteration-count: infinite;
@@ -55,25 +60,25 @@ aside .slideshow img {
 }
 
 
-aside .slideshow img:nth-of-type(1) {
+aside .slideshow a:nth-of-type(1) img{
   -webkit-animation-delay: 12s;
 }
-aside .slideshow img:nth-of-type(2) {
+aside .slideshow a:nth-of-type(2) img{
   -webkit-animation-delay: 10s;
 }
-aside .slideshow img:nth-of-type(3) {
+aside .slideshow a:nth-of-type(3) img{
   -webkit-animation-delay: 8s;
 }
-aside .slideshow img:nth-of-type(4) {
+aside .slideshow a:nth-of-type(4) img{
   -webkit-animation-delay: 6s;
 }
-aside .slideshow img:nth-of-type(5) {
+aside .slideshow a:nth-of-type(5) img{
   -webkit-animation-delay: 4s;
 }
-aside .slideshow img:nth-of-type(6) {
+aside .slideshow a:nth-of-type(6) img{
   -webkit-animation-delay: 2s;
 }
-aside .slideshow img:nth-of-type(7) {
+aside .slideshow a:nth-of-type(7) img{
   -webkit-animation-delay: 0;
 }
 
