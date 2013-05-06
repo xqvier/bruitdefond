@@ -5,7 +5,7 @@ enchainée diverses prestations scéniques (gala, téléthon, spectacle des rest
 Par la suite, elle fût chanteuse dans l'orchestre « Vibration » pendant 3 années, et continua sa route en tant que choriste 
  le JH club Millavois. </article>
  
-<article><?php afficheImage("images/photos/photos  page 3 - Pat.jpg", null,400)?>  Pat a débuté sa carrière en tant que choriste dans l'orchestre « Larsen » (2000/2002), puis il s'est mis à aux 
+<article><?php afficheImage("images/photos/photos  page 3 - Pat.jpg", null,200)?>  Pat a débuté sa carrière en tant que choriste dans l'orchestre « Larsen » (2000/2002), puis il s'est mis à aux 
  percussions. Eté 2002, il rentre dans la fanfare de la compagnie du petit vélo à   la caisse claire. Début 2003, avec quatre autres musiciens, ils fonda 
  « Les Allumés du Pouce » (ska punk). Il y resta batteur pendant quatre saisons et devenu par la suite leur manager (et il l'est 
  Toujours ! ). dès qu'il en a eu l'occasion, Pat repris le chant... !! 
