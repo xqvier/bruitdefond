@@ -41,7 +41,7 @@
 				foreach ($imageFiles as $image){
 					if(preg_match("!(\.jpg|\.jpeg|\.gif|\.bmp|\.png)$!i",$image)){
 						$image = "images/photos/".$image;
-						?><?php afficheImage($image, 250, null); ?><?php
+						?><?php afficheImage($image, 300, null); ?><?php
 					}
 				}
 			?></div>

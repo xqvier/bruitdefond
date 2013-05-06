@@ -10,6 +10,7 @@ include("tools.php");
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
+		<div id="corps">
 		<?php
 			include ("header.php");
 			include ("nav.php");
@@ -40,5 +41,6 @@ include("tools.php");
 		include ("footer.php");
 
 		?>
-	</body
+		</div>
+	</body>
 </html>

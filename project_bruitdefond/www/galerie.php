@@ -1,4 +1,4 @@
-	<div class="slideshow">
+<div class="slideshow">
 	<ul id="galerie">
 	
 	<?php 
@@ -13,5 +13,4 @@
 	?>
 	
 	</ul>
-	</div>	
 </div>
