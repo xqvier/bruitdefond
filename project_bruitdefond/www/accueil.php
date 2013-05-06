@@ -19,7 +19,7 @@
 		while(($new = mysqli_fetch_object($news)) != NULL){
 			?>		
 			<article id="<?php $new->timestamp; ?>">
-				<datetime><?php echo date_format(date_create($new->timestamp), $FORMAT_DATE); ?></datetime> - <?php echo $new->title; ?><br />
+				<datetime><?php echo date_format(date_create($new->timestamp), $FORMAT_DATE); ?></datetime> : <?php echo $new->title; ?><br />
 				<p><?php echo $new->content; ?></p>
 			</article>
 			<?php

@@ -20,19 +20,7 @@
 				}
 			}
 		?>
-	</div>
-	<div class="slideshow">
-		<h1>Diaporama</h1>
-		<ul><?php 
-				$imageFiles = scandir("images/photos");
-				foreach ($imageFiles as $image){
-					if(preg_match("!(\.jpg|\.jpeg|\.gif|\.bmp|\.png)$!i",$image)){
-						$image = "images/photos/".$image;
-						?><li><?php afficheImage($image, 250, null); ?></li><?php
-					}
-				}
-			?></ul>
-	</div>
+	</div>	
 	<div>
 		<h1>Dates</h1>		
 		<ul>
@@ -45,5 +33,17 @@
 			?>
 			
 		</ul>
+	</div>
+	<div>
+		<h1>Diaporama</h1>
+		<div class="slideshow"><?php 
+				$imageFiles = scandir("images/photos");
+				foreach ($imageFiles as $image){
+					if(preg_match("!(\.jpg|\.jpeg|\.gif|\.bmp|\.png)$!i",$image)){
+						$image = "images/photos/".$image;
+						?><?php afficheImage($image, 250, null); ?><?php
+					}
+				}
+			?></div>
 	</div>
 </aside>
