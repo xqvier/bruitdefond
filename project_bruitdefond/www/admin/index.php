@@ -1,0 +1,1 @@
+<?php	include("auth.php");	if(isset($_SESSION['user'])){			include("admin/nav.php");		if(isset($_GET['a'])){			if ($_GET['a'] == "dates") {				include("admin/dates.php");			} else if ($_GET['a'] == "news") {				include("admin/news.php");			} else {				include("error404.php");			}		} else {			include("admin/news.php");		}	} else {		include("login.php");	}?>

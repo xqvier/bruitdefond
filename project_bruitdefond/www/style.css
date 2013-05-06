@@ -72,6 +72,10 @@ section {
 	margin: 0;
 }
 
+section nav { 
+	background: none;
+	border: none;
+}
 
 aside  {
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(135, 138, 141)), color-stop(100%,rgb(50, 51, 53)));
