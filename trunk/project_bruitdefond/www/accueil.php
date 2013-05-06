@@ -18,7 +18,7 @@
 		mysqli_data_seek($news, 0);
 		while(($new = mysqli_fetch_object($news)) != NULL){
 			?>		
-			<article id="<?php $new->timestamp; ?>">
+			<article id="<?php echo $new->timestamp; ?>">
 				<datetime><?php echo date_format(date_create($new->timestamp), $FORMAT_DATE); ?></datetime> : <?php echo $new->title; ?><br />
 				<p><?php echo $new->content; ?></p>
 			</article>

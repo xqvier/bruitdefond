@@ -1,7 +1,8 @@
 <?php
-include("config.php");
-include("database.php");
-include("tools.php");
+	session_start();
+	include("config.php");
+	include("database.php");
+	include("tools.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,7 +28,10 @@ include("tools.php");
 					include ("duo.php");
 				} else if ($_GET['p'] == "contact"){
 					include ("contact.php");
-				} else {
+				} else if ($_GET['p'] == "admin"){
+					include("admin/index.php");
+				}
+				else {
 					include("error404.php");
 				}				
 			} else{
