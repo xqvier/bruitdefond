@@ -20,7 +20,7 @@
 			if($_GET['action'] == "edit" && isset($_GET['confirm'])) {
 				// Validation de l'édition
 				editDate($_POST['id'], $_POST['day'], $_POST['title'], $_POST['place']);
-			} else if ($_GET['action'] == "add") {
+			} else if ($_GET['action'] == "add" && isset($_GET['confirm'])) {
 				// Validation de l'ajout
 				addDate($_POST['day'], $_POST['title'], $_POST['place']);
 			}

@@ -89,8 +89,8 @@ function getVideo () {
 	return mysqli_query($GLOBALS['db'], $query);
 }
 
-function addVideo ($date, $title, $link) {
-	$query = "INSERT INTO video (date, title, link) VALUES('".$date."', '".$title."', '".$link."')";
+function addVideo ($timestamp, $title, $link) {
+	$query = "INSERT INTO video (timestamp, title, link) VALUES('".$timestamp."', '".$title."', '".$link."')";
 
 	mysqli_query($GLOBALS['db'], $query);
 }
