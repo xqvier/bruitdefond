@@ -15,7 +15,7 @@ $SENDER_MAIL = "";
 
 
 // Contact
-$CONTACT_MAIL = "xqvier@gmail.com";
+$CONTACT_MAIL = "bruitdefondsp@live.fr";
 $FACEBOOK_PAGE = "https://fr-fr.facebook.com/bruitdefondacoustique";
 
 

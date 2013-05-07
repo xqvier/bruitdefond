@@ -8,7 +8,7 @@
 	<?php
 		while(($new = mysqli_fetch_object($news)) != NULL){
 			?>		
-			<li><a href="#<?php echo $new->timestamp; ?>"><datetime><?php echo date_format(date_create($new->timestamp), $FORMAT_DATE); ?></datetime> : <?php echo $new->title; ?></a></li>
+			<li><a href="#<?php echo $new->id; ?>"><datetime><?php echo date_format(date_create($new->timestamp), $FORMAT_DATE); ?></datetime> : <?php echo $new->title; ?></a></li>
 			<?php
 		}
 	?>
@@ -19,7 +19,7 @@
 		while(($new = mysqli_fetch_object($news)) != NULL){
 			?>		
 
-			<article id="<?php echo $new->timestamp; ?>">
+			<article id="<?php echo $new->id; ?>">
 				<h1><datetime><?php echo date_format(date_create($new->timestamp), $FORMAT_DATE); ?></datetime><?php echo $new->title; ?></h1>
 				<p><?php echo $new->content; ?></p>
 			</article>
