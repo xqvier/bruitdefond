@@ -23,14 +23,14 @@ Pat<br>
 06 64 82 05 85<br />
 </address>
 <address>
-<?php
-echo $CONTACT_MAIL ."<br />"
-?>
-<a title="Notre page Facebook" href="<?php echo $FACEBOOK_PAGE;?>">Facebook</a>
-<br>Ou envoyer un message via le formulaire ci-dessous</br>
+	<a title="Mail de contact" href="mailto:<?php echo $CONTACT_MAIL; ?>"><?php echo $CONTACT_MAIL; ?></a><br />
+	<a title="Notre page Facebook" href="<?php echo $FACEBOOK_PAGE;?>">Facebook</a>
+</address>
+<br />
+Ou envoyer un message via le formulaire ci-dessous<br />
 
 <form method="post" action="?p=contact&action=send">
-Votre Mail: <input type="email" name="mail">
+<label> Mail: </label><input type="email" name="mail">
 Votre Tél: <input type="tel" name="tel">
 Objet de votre message: <input type="text" name="objet">
 Votre message: <textarea name="corpmail"></textarea>

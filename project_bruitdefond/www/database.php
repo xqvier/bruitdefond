@@ -47,7 +47,7 @@ function editDate($id, $day, $title, $place) {
 
 
 function getRecentesActualites(){
-	$query = "SELECT * FROM news ORDER BY timestamp LIMIT 0, 10";
+	$query = "SELECT * FROM news ORDER BY timestamp DESC LIMIT 0, 10";
 	
 	return mysqli_query($GLOBALS['db'], $query);
 }
