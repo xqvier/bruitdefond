@@ -8,9 +8,9 @@
 		?>
 		<form action="?p=admin&a=news&action=<?php echo $_GET['action']; ?>&confirm" method="post">
 			<input type="hidden" name="id" value="<?php echo isset($_GET['id']) ? $_GET['id'] : "" ; ?>" />
-			Date : <input type="datetime-local" name="timestamp" value="<?php echo $new != NULL ? $new->timestamp : "" ; ?>" />
-			Titre : <input type="text" name="title" value="<?php echo $new != NULL ? $new->title : "" ; ?>" />
-			Contenu : <textarea name="content"><?php echo $new != NULL ? $new->content : "" ; ?></textarea>
+			<label>Date :</label><input type="datetime-local" name="timestamp" value="<?php echo $new != NULL ? $new->timestamp : "" ; ?>" /><br />
+			<label>Titre :</label><input type="text" name="title" value="<?php echo $new != NULL ? $new->title : "" ; ?>" /><br />
+			<label>Contenu :</label><textarea name="content"><?php echo $new != NULL ? $new->content : "" ; ?></textarea><br />
 			<button type="submit">Soumettre</button>
 		</form>
 		

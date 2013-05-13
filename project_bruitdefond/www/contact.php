@@ -30,10 +30,10 @@ Pat<br>
 Ou envoyer un message via le formulaire ci-dessous<br />
 
 <form method="post" action="?p=contact&action=send">
-<label> Mail: </label><input type="email" name="mail">
-Votre Tél: <input type="tel" name="tel">
-Objet de votre message: <input type="text" name="objet">
-Votre message: <textarea name="corpmail"></textarea>
+<label>Mail :</label><input type="email" name="mail"><br />
+<label>Votre Tél :</label><input type="tel" name="tel"><br />
+<label>Objet de votre message :</label><input type="text" name="objet"><br />
+<label>Votre message :</label><textarea name="corpmail"></textarea><br />
 <button type="submit">Envoyer</button>
 </form>
 

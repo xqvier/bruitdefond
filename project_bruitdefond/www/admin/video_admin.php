@@ -6,9 +6,9 @@
 			?>
 		<form action="?p=admin&a=video_admin&action=<?php echo $_GET['action']; ?>&confirm" method="post">
 			<input type="hidden" name="id" value="<?php echo isset($_GET['id']) ? $_GET['id'] : "" ; ?>" />
-			Date  : <input type="datetime-local" name="timestamp" value="<?php echo $video != NULL ? $date->timestamp : "" ; ?>" />
-			Titre : <input type="text" name="title" value="<?php echo $video != NULL ? $date->title : "" ; ?>" />
-			Lien  : <input type="text" name="link" value="<?php echo $video != NULL ? $date->link : "" ; ?>" />
+			<label>Date  :</label><input type="datetime-local" name="timestamp" value="<?php echo $video != NULL ? $date->timestamp : "" ; ?>" /><br />
+			<label>Titre :</label><input type="text" name="title" value="<?php echo $video != NULL ? $date->title : "" ; ?>" /><br />
+			<label>Lien  :</label><input type="text" name="link" value="<?php echo $video != NULL ? $date->link : "" ; ?>" /><br />
 			<button type="submit">Soumettre</button>
 		</form>
 		
@@ -20,7 +20,6 @@
 				// Validation de l'ajout
 			if ($_GET['action'] == "add" && isset($_GET['confirm'])) {
 				$link = $_POST['link'];
-				echo $link;
 				$link = explode("?", $link)[1];
 				$array = explode("&", $link);
 				
@@ -30,9 +29,8 @@
 					}
 				}
 				
-				echo $link;
 				
-				addVideo($_POST['timestamp'], $_POST['title'], $_POST['link']);
+				addVideo($_POST['timestamp'], $_POST['title'], $link);
 			}	
 		if($_GET['action'] == "delete") {
 				deleteVideo($_GET['id']);

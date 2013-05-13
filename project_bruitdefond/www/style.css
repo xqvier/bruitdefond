@@ -81,8 +81,12 @@ section ul {
 	border: 1px solid grey;
 	list-style: none;
 }
-section li a{
+section li a {
 	color: lightgrey;
+}
+
+section nav {
+	margin-bottom: 20px;
 }
 
 aside  {
@@ -182,6 +186,50 @@ aside .slideshow a:nth-of-type(7) img{
   -webkit-animation-delay: 0;
 }
 
+table {
+	border : 2px grey solid;
+	width: 100%;
+	background: rgb(218, 215, 215);
+	border-collapse:collapse;
+}
+
+table tbody tr:hover {
+	background: grey;
+}
+
+table th {
+	border: 1px grey solid;
+	border-bottom: 2px grey solid;
+}
+
+table td {
+	text-align: center;
+	border: 1px grey solid;
+}
+
+table td a {
+	display:block;
+}
+form label {
+	width: 30%;
+	display:inline-block;	
+	vertical-align: top;
+}
+form input {
+	width: 40%;
+}
+form textarea {
+	width: 40%;
+	height: 200px;
+}
+form button {
+	background: rgb(218, 215, 215);
+	width: 100px;
+	height: 35px;
+	border-radius: 3%;
+}
+
+
 article {
 	clear: both;
 	min-height:  210px;
@@ -222,6 +270,13 @@ article a img {
 article p {
 	padding: 8px;
 	margin: 0;
+}
+
+.video div {
+	text-align: center;
+}
+.video:hover {
+	-webkit-transform: none;
 }
 
 .center {
@@ -277,6 +332,11 @@ article p {
 	-ms-transform: scale(1);
 	
 }
+
+
+
+
+
 
 
 footer {
