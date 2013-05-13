@@ -8,9 +8,9 @@
 		?>
 		<form action="?p=admin&a=dates&action=<?php echo $_GET['action']; ?>&confirm" method="post">
 			<input type="hidden" name="id" value="<?php echo isset($_GET['id']) ? $_GET['id'] : "" ; ?>" />
-			Date : <input type="datetime-local" name="day" value="<?php echo $date != NULL ? $date->day : "" ; ?>" />
-			Titre : <input type="text" name="title" value="<?php echo $date != NULL ? $date->title : "" ; ?>" />
-			Location : <input type="text" name="place" value="<?php echo $date != NULL ? $date->place : "" ; ?>" />
+			<label>Date :</label><input type="datetime-local" name="day" value="<?php echo $date != NULL ? $date->day : "" ; ?>" /><br />
+			<label>Titre :</label><input type="text" name="title" value="<?php echo $date != NULL ? $date->title : "" ; ?>" /><br />
+			<label>Location :</label><input type="text" name="place" value="<?php echo $date != NULL ? $date->place : "" ; ?>" /><br />
 			<button type="submit">Soumettre</button>
 		</form>
 		

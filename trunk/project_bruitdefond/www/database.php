@@ -84,7 +84,7 @@ function editActualite($id, $timestamp, $title, $content) {
 }
 
 function getVideo () {
-	$query = "SELECT * FROM video";
+	$query = "SELECT * FROM video ORDER BY timestamp DESC";
 	
 	return mysqli_query($GLOBALS['db'], $query);
 }
