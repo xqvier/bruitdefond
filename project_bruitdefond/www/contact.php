@@ -27,10 +27,10 @@ Pat<br>
 	<a title="Notre page Facebook" href="<?php echo $FACEBOOK_PAGE;?>">Facebook</a>
 </address>
 <br />
-Ou envoyer un message via le formulaire ci-dessous<br />
+Ou envoyer un message via le formulaire ci-dessous :<br /><br />
 
 <form method="post" action="?p=contact&action=send">
-<label>Mail :</label><input type="email" name="mail"><br />
+<label>Votre adresse Mail :</label><input type="email" name="mail"><br />
 <label>Votre Tél :</label><input type="tel" name="tel"><br />
 <label>Objet de votre message :</label><input type="text" name="objet"><br />
 <label>Votre message :</label><textarea name="corpmail"></textarea><br />
