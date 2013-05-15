@@ -8,6 +8,10 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Bruit de fond - Groupe de musique acoustique" />
+		<meta name="keywords" content="Bruit,fond,Bruit de fond,musique,rock,acoustique,Rodez,Aveyron,Pat,Sylvy" />
+		<meta name="author" content="Durroux Julian" />
+		<meta name="author" content="Mourgues Xavier" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>Bruit de fond</title>
 	</head>

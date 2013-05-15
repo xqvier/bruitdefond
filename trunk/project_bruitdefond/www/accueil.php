@@ -4,7 +4,10 @@
 <p class="center">
 	Bruit de Fond, c'est la rencontre entre une chanteuse (Sylvy) et un guitariste chanteur (Pat), qui ont réuni leur passion de la musique pour vous proposer un duo accoustique.
 </p>
-<ul id="news">
+<div id="raccourci">
+	<h1>Accès rapide aux News : </h1>
+<ul>
+	
 	<?php
 		while(($new = mysqli_fetch_object($news)) != NULL){
 			?>		
@@ -13,6 +16,7 @@
 		}
 	?>
 </ul>
+</div>
 <div>
 	<?php
 		mysqli_data_seek($news, 0);

@@ -11,7 +11,7 @@
 					?>
 					<br />
 					<audio controls>
-						<source src="<?php echo str_replace(" ", "%20",$mp3); ?>" type="audio/mpeg">
+						<source src="<?php echo $mp3; ?>" type="audio/mpeg">
 						Votre navigateur ne supporte pas le HTML5 et vous ne pouvez donc pas profiter de la super playlist !!	
 					</audio>	
 					<br />			

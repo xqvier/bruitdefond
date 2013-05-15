@@ -27,6 +27,10 @@ header {
 	padding: 10px;
 }
 
+header a {
+	color: inherit;
+}
+
 header h1{
 	font-size: 50px;
 	margin: 10px;
@@ -76,13 +80,6 @@ section {
 	background: rgb(129, 141, 148);
 	margin: 0;
 	padding: 1%;
-}
-section ul {
-	border: 1px solid grey;
-	list-style: none;
-}
-section li a {
-	color: lightgrey;
 }
 
 section nav {
@@ -141,6 +138,7 @@ aside .slideshow a img {
 	-webkit-animation-duration: 14s;
 	
 	opacity:0;
+	z-index: 1;
 	width: 100%;
 	position: absolute;
 	left: 0;
@@ -149,18 +147,23 @@ aside .slideshow a img {
 @-webkit-keyframes FadeInOut {
   0% {
     opacity:1;
+	//z-index: 100;
   }
   17% {
     opacity:1;
+	//z-index: 100;
   }
   25% {
     opacity:0;
+	//z-index: 1;
   }
   92% {
     opacity:0;
+	//z-index: 1;
   }
   100% {
     opacity:1;
+	//z-index: 100;
   }
 }
 
@@ -283,6 +286,20 @@ article p {
 	text-align: center;
 	font-size: 21px;
 	padding: 2%;
+}
+
+#raccourci h1{
+	text-transform: uppercase;
+	font: bold 11px arial;
+	margin-bottom: 5px;
+}
+#raccourci ul {
+	border: 2px solid grey;
+	list-style: none;
+	margin-top: 0px;
+}
+#raccourci li a {
+	color: lightgrey;
 }
 
 
