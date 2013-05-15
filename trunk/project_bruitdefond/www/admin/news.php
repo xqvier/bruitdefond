@@ -20,7 +20,6 @@
 			if($_GET['action'] == "edit" && isset($_GET['confirm'])) {
 				// Validation de l'édition
 				editActualite($_POST['id'], $_POST['timestamp'], $_POST['title'], $_POST['content']);
-				echo "J'AI EDITE!!!";
 			} else if ($_GET['action'] == "add" && isset($_GET['confirm'])) {
 				// Validation de l'ajout
 				addActualite($_POST['timestamp'], $_POST['title'], $_POST['content']);
