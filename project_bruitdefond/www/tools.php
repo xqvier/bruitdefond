@@ -24,3 +24,5 @@ function afficheImage($imageNameComp, $width, $height){
 	}
 	echo '<a href="'.str_replace(" ", "%20", $imageNameComp).'"><img src="'.str_replace(" ", "%20", $destImg).'" alt="'.$imageName.'" /></a>';
 }
+
+?>

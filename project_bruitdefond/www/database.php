@@ -39,7 +39,7 @@ function addDate($day, $title, $place) {
 }
 
 function editDate($id, $day, $title, $place) {
-	$query = "UPDATE news SET title='".$title."', place='".$place."', day = '".$day."' WHERE id = '".$id."'";
+	$query = "UPDATE dates SET title='".$title."', place='".$place."', day = '".$day."' WHERE id = '".$id."'";
 	
 	mysqli_query($GLOBALS['db'], $query);
 }
